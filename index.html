@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="myfont">
+        <h1 class="main-head">Sportswear Brand Resarch Survey Form</h1>
+        <h2 class="sub-head">Thank you for taking the time to help us improve the platform</h2>
+        <div class="container">
+            <div class="elements">
+                <h3 class="tags">Name</h3>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="elements">
+                <h3 class="tags">Email</h3>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="elements">
+                <h3 class="tags">Age</h3>
+                <input type="number" min="3" max="130" placeholder="Age">
+            </div>
+
+            <div class="elements">
+                <h3 class="tags">Gender</h3>
+                <label for="gender">
+                    <select name="gender" id="gender">
+                        <option value="0" disabled selected>Select an option</option>
+                        <option value="1">Female</option>
+                        <option value="2">Male</option>
+                        <option value="3">Non-binary</option>
+                        <option value="4">Preferred not to answer</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="elements">
+                <h3 class="tags">How often do you exercise?</h3>
+                <label value="0"><input type="radio" name="recommed" checked>Daily</label>
+                <label value="1"><input type="radio" name="recommed">4-6 times a week</label>
+                <label value="2"><input type="radio" name="recommed">2-3 times a week</label>
+                <label value="3"><input type="radio" name="recommed">Once a week</label>
+                <label value="4"><input type="radio" name="recommed">Not often</label>
+                <label value="5"><input type="radio" name="recommed">Not at all</label>
+            </div>
+
+            <div class="elements use">
+                <h3 class="tags">How often do you use sportswear products? <span> (0-Not at all, 10-Most often)</span>
+                </h3>
+                <label value="0"><input type="radio" name="recommed">0</label>
+                <label value="1"><input type="radio" name="recommed">1</label>
+                <label value="2"><input type="radio" name="recommed">2</label>
+                <label value="3"><input type="radio" name="recommed">3</label>
+                <label value="4"><input type="radio" name="recommed">4</label>
+                <label value="5"><input type="radio" name="recommed">5</label>
+                <label value="6"><input type="radio" name="recommed">6</label>
+                <label value="7"><input type="radio" name="recommed">7</label>
+                <label value="8"><input type="radio" name="recommed">8</label>
+                <label value="9"><input type="radio" name="recommed">9</label>
+                <label value="10"><input type="radio" name="recommed">10</label>
+            </div>
+
+            <div class="elements improve">
+                <h3 class="tags">Which of the followings would describe your purpose to buy sportswear?<span> (Check all
+                        that apply)</span></h3>
+
+                <label value="1"><input type="checkbox">Gym/Fitness</label>
+                <label value="2"><input type="checkbox">Running</label>
+                <label value="3"><input type="checkbox">Hiking</label>
+                <label value="4"> <input type="checkbox">Outdoor Fashion</label>
+                <label value="5"><input type="checkbox">Indoor Sports <span>(Squash, Table Tennis
+                        etc.)</span></label>
+                <label value="6"> <input type="checkbox">Outdoor Sports <span>(Cricket, football, basketball
+                        etc.)</span></label>
+            </div>
+
+            <div class="elements improve">
+                <h3 class="tags">Where do you usually buy your sportswear from?<span> (Check all
+                        that apply)</span></h3>
+
+                <label value="1"><input type="checkbox">Retail Store</label>
+                <label value="2"><input type="checkbox">Exclusive Brand outlets</label>
+                <label value="3"><input type="checkbox">Mutli Brand Retail</label>
+                <label value="4"> <input type="checkbox">Online/E-Commerce</label>
+                <label value="5"> <input type="checkbox">Other</label>
+            </div>
+
+            <div class="elements improve">
+                <h3 class="tags">Which of the followings would influence your decision to buy a certain
+                    brand?<span>(Check all that apply)</span></h3>
+
+                <label value="1"><input type="checkbox">Price</label>
+                <label value="2"><input type="checkbox">Quality</label>
+                <label value="3"><input type="checkbox">Value</label>
+                <label value="4"> <input type="checkbox">Brand</label>
+                <label value="5"> <input type="checkbox">Other</label>
+            </div>
+
+            <div class="elements improve">
+                <h3 class="tags">Please rate your preferences regarding the materials used in sportswear</h3>
+                <div class="ranger">
+                    <label value="1">Water Resistance<input type="range" step="1" min="0" max="10"></label>
+                    <label value="2">Cooling <input type="range" step="1" min="0" max="10"></label>
+                    <label value="3">Anti Bacteria<input type="range" step="1" min="0" max="10"></label>
+                    <label value="4">Anti Odour<input type="range" step="1" min="0" max="10"></label>
+                    <label value="5">Elasticity<input type="range" step="1" min="0" max="10"></label>
+                    <label value="6">Endurance<input type="range" step="1" min="0" max="10"></label>
+                    <label value="7">Soft and smooth material<input type="range" step="1" min="0" max="10"></label>
+
+                </div>
+            </div>
+
+
+            <div class="elements">
+                <h3 class="tags">Anything else you would like to say? <span>(Optional)</span></h3>
+                <textarea name="suggestions" class="suggestions"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

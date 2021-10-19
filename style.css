@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.background{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(https://source.unsplash.com/1600x900/?athlete,sportswoman,sportswear);
+    background-color: rgba(0, 0, 0, 0.8);
+    /* opacity: 0.5; */
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment:fixed;
+    z-index: -1;
+}
+
+.myfont {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 55%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    justify-content: center;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    font-weight: 100;
+}
+.container .tags{
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+}
+span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.main-head{
+    text-align: center;
+    max-width: 40%;
+    margin: 5rem auto 0.1em auto;
+    font-size: 3.0em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #e0f7fa;
+}
+.sub-head{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #e0f7fa;
+}
+input, select{
+    width: 100%;
+    height: 2em;
+    font-size: 1.2rem; 
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px ;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #494949;
+}
+input:focus, input:active, select:focus{
+    outline: none;
+    border: 2px solid #428e92;
+    /* border: 2px solid rgb(83, 192, 255); */
+    background-color: rgb(245, 245, 245);
+    
+}
+.elements{
+    /* background-color: thistle; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column ;
+    margin: 0.8rem;
+}
+
+.use{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+}
+
+.suggestions{
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    font-size: 20px;
+}
+.suggestions:focus, .suggestions:active{
+    outline: none;
+}
+
+.btn-submit{
+    width: 25%;
+    margin: 2em auto 0 auto;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #006064;
+    color: #e0f7fa;
+    border: none;
+    overflow: hidden;
+}
+.btn-submit:hover{
+    background-color: #00363a;
+    transition: 300ms;
+}
+.btn-submit:active{
+    background-color: #428e92;
+    outline: none;
+    border: none;
+    transition: 100ms;
+}
+
+::placeholder{
+    color:#757575;
+}
+
+input[type='radio'], input[type='checkbox']{
+    display: inline;
+    position: relative;
+    margin: 0.5em 1em 0.5em 0;
+    cursor: pointer;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+input[type='checkbox']:hover{
+    width: 2.5rem;
+    transition: 200ms;
+}
+
+input[type='range']{
+    width: 30%;
+    vertical-align: middle;
+    padding: 0;
+}
+.ranger label {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    /* position: relative; */
+    left: 5rem;
+    width: 100%;
+}
+.ranger input{
+    position: absolute;
+    right: 5rem;
+}
+
+.use label{
+    padding: 0 3rem 0 0;
+}
+
+label{
+    /* border: 1px solid white; */
+    /* align-content: center; */
+    font-size: 1.4rem;
+    cursor: pointer;
+}
